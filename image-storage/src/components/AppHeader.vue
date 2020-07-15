@@ -1,5 +1,7 @@
 <template>
-    <h1>Imagy</h1>
+<div>
+    Image Storage
+</div>
 </template>
 
 <script>
