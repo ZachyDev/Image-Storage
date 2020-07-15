@@ -1,6 +1,6 @@
 <template>
   <div>
-      Hello from Zachy
+      Hello from Zachy.
   </div>
 </template>
 
