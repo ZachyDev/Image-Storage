@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="header">
     Image Storage
 </div>
 </template>
