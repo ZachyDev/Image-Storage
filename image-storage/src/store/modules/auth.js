@@ -15,5 +15,7 @@ const actions = {
 
 // mutatations object
 const mutatations = {
-
+    setToken: (state,token) => {
+        state.token = token;
+    }
 };
