@@ -10,7 +10,9 @@ const getters = {
 
 // actions object
 const actions = {
-
+    logout: ({ commit }) => {
+        commit('setToken',null);
+    }
 };
 
 // mutatations object
