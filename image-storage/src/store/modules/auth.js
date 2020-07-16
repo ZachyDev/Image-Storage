@@ -21,9 +21,14 @@ const actions = {
 };
 
 // mutatations object
-const mutatations = {
+const mutations = {
     setToken: (state,token) => {
         state.token = token;
     }
 };
-export default { state,getters,actions,mutations }
+export default { 
+    state,
+    getters,
+    actions,
+    mutations
+ }
