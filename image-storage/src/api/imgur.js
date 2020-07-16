@@ -8,6 +8,6 @@ export default {
             client_id: CLIENT_ID,
             resonse_type: 'token'
         }
-        `${ ROOT_URL }/oauth2/authorize?${qs.stringify(query_string)}`;
+        window.location = `${ ROOT_URL }/oauth2/authorize?${qs.stringify(query_string)}`;
     }
 }
