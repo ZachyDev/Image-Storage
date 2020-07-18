@@ -12,7 +12,7 @@ const getters = {
 // actions object
 const actions = {
     login: () => {
-        api.login();
+        api.loginUser();
     },
     logout: ({ commit }) => {
         commit('setToken',null);

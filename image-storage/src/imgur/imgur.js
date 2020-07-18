@@ -6,7 +6,7 @@ const CLIENT_ID = 'e7789e0c1e796c4';
 const ROOT_URL = 'https://api.imgur.com';
 // login object
 const login = {
-    login: () => {
+    loginUser: () => {
         const query_string = {
             client_id: CLIENT_ID,
             response_type: 'token'
