@@ -7,6 +7,7 @@ import AuthHandler from './components/AuthHandler';
 Vue.use(VueRouter);
 // create a vue-router instance
 const router = new VueRouter({
+    mode: 'history',
     routes: [
         { path: 'oauth2/callback',component: AuthHandler },
     ]
