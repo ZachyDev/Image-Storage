@@ -1,16 +1,18 @@
+// qs library
 import qs from 'qs';
-// login object
+// client_id
 const CLIENT_ID = 'e7789e0c1e796c4';
+// root_url
 const ROOT_URL = 'https://api.imgur.com';
-
+// login object
 const login = {
     login: () => {
         const query_string = {
             client_id: CLIENT_ID,
             response_type: 'token'
         }
-        // redirect to new page
-        window.location = `${ROOT_URL}/oauth2/authorize?${qs.stringify(query_string)}`;
+        // redirect to a  new page
+        window.location = `${ ROOT_URL }/oauth2/authorize?${ qs.stringify(query_string) }`;
     }
 }
 
