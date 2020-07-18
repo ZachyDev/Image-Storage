@@ -1,29 +1,29 @@
-import api from '../../api/imgur';
+import api from '../../imgur/imgur';
 // state object
 const state = {
     token: null
-}
+};
 
-// getter object
-const getter = {
-   isLoggedIn: state => !!state.token
+// getters object
+const getters = {
+    isLoggedIn: state => !!state.token
 };
 
 // actions object
 const actions = {
     login: () => {
-        api.login()
+        api.login();
     },
     logout: ({ commit }) => {
-        commit('setToken',null)
+        commit('setToken',null);
     }
 };
 
 // mutations object
 const mutations = {
     setToken: (state,token) => {
-        state.token = token
+        state.token = token;
     }
-};
+}
 
-export default { state,actions,getter,mutations };
+export default { state,getters,actions,mutations };
