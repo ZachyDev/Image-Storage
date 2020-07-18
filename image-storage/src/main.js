@@ -5,14 +5,14 @@ import VueRouter from 'vue-router';
 import AuthHandler from './components/AuthHandler';
 // connect vue with vue-router
 Vue.use(VueRouter);
-// create a vue-router instance
+// create an instance of a  vue object
 const router = new VueRouter({
     mode: 'history',
     routes: [
-        { path: 'oauth2/callback',component: AuthHandler },
+        // oauth2/callback route
+        { path: '/oauth2/callback',component: AuthHandler}
     ]
 })
-// create an instance of a  vue object
 new Vue({
     router,
     store,
