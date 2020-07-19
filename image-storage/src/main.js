@@ -6,13 +6,12 @@ import AuthHandler from './components/AuthHandler';
 import About from './components/About';
 // connect vue with vue-router
 Vue.use(VueRouter);
-// create an instance of a  vue object
+// create a new instance of vue router object
+
 const router = new VueRouter({
     mode: 'history',
     routes: [
-        // oauth2/callback route
-        { path: '/oauth2/callback',component: AuthHandler},
-        // about route
+        { path: '/oauth2/callback',component: AuthHandler },
         { path: '/about',component: About }
     ]
 })

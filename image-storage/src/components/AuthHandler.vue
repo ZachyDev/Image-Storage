@@ -1,6 +1,6 @@
 <template>
   <div>
-      <h3>Please wait...</h3>
+      <h2>Redirecting ...</h2>
   </div>
 </template>
 
